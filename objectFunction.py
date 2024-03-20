@@ -20,6 +20,8 @@ def extractObject(input_sentence):
         # Check if the character is "を"
         elif input_sentence[i] == "を":
             wo_index = i
+        elif input_sentence[i] == "に":
+            wo_index = i
     
     # Check if both markers are found
     if ga_index != -1 and wo_index != -1 and ga_index < wo_index:
